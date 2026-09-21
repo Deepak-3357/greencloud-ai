@@ -1,0 +1,9 @@
+Important: This is a Java/Maven project, so pom.xml is the actual dependency-management file. requirements.txt is provided only as a human-readable environment requirement reference.
+
+
+
+Java Development Kit (JDK) 17+ Apache Maven 3.8+ CloudSim Plus 8.5.x SLF4J 2.0.17 Logback Core 1.5.18 Logback Classic 1.5.18
+
+
+
+The exact Maven dependency versions used by the project should always be taken from pom.xml.
