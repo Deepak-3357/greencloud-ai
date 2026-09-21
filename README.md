@@ -759,12 +759,13 @@ Simulation Duration	Simulation execution period
 🧪 Example Test Configuration
 
 Example:
-
+```text
 Hosts              = 10
 VMs                = 50
 Cloudlet Length    = 50000
 Host CPU           = 10000 MIPS
 VM CPU             = 2500 MIPS
+```
 
 This represents a cloud environment with:
 
@@ -934,7 +935,7 @@ The system supports changing simulation parameters to study different
 cloud scenarios.
 
 For example:
-
+```text
 Scenario 1 – Low Workload
 Hosts = 50
 VMs = 10
@@ -957,6 +958,7 @@ Hosts = 10
 VMs = 50
 Cloudlet Length = 100000
 VM CPU = 5000
+```
 
 These scenarios allow changes in workload intensity and infrastructure
 capacity to be studied.
@@ -966,12 +968,12 @@ capacity to be studied.
 The values displayed by the dashboard are simulation results.
 
 For example:
-
+```text
 Power = W
 Energy = Wh
 CPU = %
 RAM = %
-
+```
 These values represent the behaviour of the simulated cloud infrastructure
 under the selected configuration.
 
@@ -1087,7 +1089,7 @@ The current implementation establishes a configurable and measurable baseline
 for cloud resource management. The collected resource, energy, workload,
 migration and SLA information provides the foundation for evaluating
 intelligent VM placement and energy optimization strategies.
-
+```text
 ⭐ Project Highlights
 ☁️ CloudSim Plus based cloud simulation
 🖥️ Physical host and VM modelling
@@ -1101,3 +1103,4 @@ intelligent VM placement and energy optimization strategies.
 🧪 Multiple workload configurations
 🤖 AI-aware optimization foundation
 🌱 Green cloud and energy-efficiency focus
+```
