@@ -77,7 +77,7 @@ The main objectives of the project are:
 
 The basic workflow of the system is:
 
-
+```text
 User Configuration
         │
         ▼
@@ -108,6 +108,7 @@ SLA Monitoring
         │
         ▼
 Reports + CSV + Dashboard
+```
 
 The framework separates the simulation layer from the monitoring and
 visualization layer so that the underlying CloudSim simulation can be
@@ -155,7 +156,7 @@ Cloudlets
 Represent computational tasks/workloads executed through the VMs.
 
 The relationship can be represented as:
-
+```text
 Data Center
      │
      ├── Host 1
@@ -167,6 +168,7 @@ Data Center
      │      └── VM 4
      │
      └── Host N
+```
 
 Cloudlets are submitted to VMs and executed using the resources provided by
 the hosts.
@@ -176,7 +178,7 @@ the hosts.
 VM placement determines which physical host is used to execute each VM.
 
 For example:
-
+```
 Host 0
  ├── VM 1
  ├── VM 2
@@ -188,6 +190,7 @@ Host 1
  ├── VM 6
  ├── VM 7
  └── VM 8
+```
 
 The current demonstrated implementation provides a balanced baseline VM
 allocation using identical host and VM configurations.
@@ -220,7 +223,7 @@ energy consumption in a simulated cloud environment.
 
 The framework estimates host power consumption using the configured energy
 model.
-
+```
 The general relationship is:
 
 Host Utilization
@@ -233,6 +236,7 @@ Energy Calculation
        │
        ▼
 Cumulative Energy
+```
 
 The dashboard displays:
 
@@ -266,7 +270,7 @@ SLA violations
 
 An AI-aware placement system can use these parameters to evaluate candidate
 hosts and select a suitable host for a VM.
-
+```text
 A conceptual optimization workflow is:
 
 VM Request
@@ -297,6 +301,7 @@ Migration / Consolidation
      │
      ▼
 Energy Analysis
+```
 
 The current implementation should therefore be understood as the
 simulation, monitoring and baseline energy-analysis foundation for the
@@ -410,44 +415,58 @@ Shows VM migration activity over simulation time.
 It helps identify when migration events occur and how many migration events
 take place.
 
-🖼️ Project Screenshots
-Dashboard – Main View
+## 🖼️ Project Screenshots
 
-The dashboard provides a centralized view of the cloud simulation,
-including energy, CPU utilization, VM count, cloudlet status, SLA
-violations and migration information.
+### 1. Live Monitoring Dashboard
 
-Dashboard – Detailed View
+![Green Cloud Monitoring Dashboard](Dashboard-1.png)
+
+The main dashboard provides a centralized view of the simulation, including
+energy consumption, host CPU utilization, VM utilization, active hosts,
+running VMs, cloudlets, SLA violations and migration information.
+
+---
+
+### 2. Detailed Dashboard
+
+![Green Cloud Detailed Dashboard](Dashboard-2.png)
 
 The detailed dashboard provides graphical representations of:
 
-Energy consumption
-Host utilization
-VM utilization
-Migration activity
+- Energy vs Time
+- Host Utilization
+- VM Utilization
+- Migration Timeline
 
-It also provides host-level information such as CPU, RAM, power, energy,
+It also displays host-level information such as CPU, RAM, power, energy,
 VM count and status.
 
-Input Configuration
+---
 
-The input configuration screen allows the simulation parameters to be
-configured before execution.
+### 3. Simulation Input Configuration
 
-Typical parameters include:
+![Green Cloud Input Configuration](Green-cloud-input-details.png)
 
-Number of hosts
-Number of VMs
-Cloudlet/workload configuration
-Host CPU capacity
-VM CPU requirement
+This screen shows the configurable parameters used to create the cloud
+simulation, including:
 
-These parameters allow multiple experimental scenarios to be tested.
+- Number of Hosts
+- Number of VMs
+- Host CPU capacity
+- VM CPU requirement
+- Cloudlet/workload configuration
+- Simulation duration
 
-Generated Report
+These parameters allow different cloud workload scenarios to be tested.
 
-The reporting component provides summarized simulation results for later
-analysis and documentation.
+---
+
+### 4. Generated Simulation Report
+
+![Green Cloud Simulation Report](report.png)
+
+The generated report provides a summarized view of the simulation results
+for analysis and documentation.
 
 🧩 Monitoring Components
 
