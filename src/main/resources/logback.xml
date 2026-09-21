@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Suppress CloudSim Plus default INFO logging -->
+    <logger name="org.cloudsimplus" level="WARN"/>
+    <logger name="org.cloudsimplus.core" level="WARN"/>
+    <logger name="org.cloudsimplus.brokers" level="WARN"/>
+    <logger name="org.cloudsimplus.hosts" level="WARN"/>
+    <logger name="org.cloudsimplus.vms" level="WARN"/>
+    <logger name="org.cloudsimplus.cloudlets" level="WARN"/>
+
+    <!-- Root logger configuration -->
+    <root level="WARN">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>
