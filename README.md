@@ -382,7 +382,7 @@ Simulation Time
 1. Energy vs Time
 
 Shows the cumulative energy consumption as the simulation progresses.
-
+```text
 Energy
   │
   │             /
@@ -391,6 +391,7 @@ Energy
   │    /
   │ /
   └──────────────── Time
+```
 
 This graph helps analyse the energy behaviour of the simulated cloud.
 
@@ -517,7 +518,7 @@ Stores resource information at a particular simulation point.
 MetricsExporter
 
 Exports collected metrics to CSV files.
-
+```text
 📁 Project Structure
 greencloud-ai/
 │
@@ -530,6 +531,7 @@ greencloud-ai/
 ├── README.md
 ├── LICENSE
 └── .gitignore
+```
 
 The src directory contains the Java implementation.
 
@@ -767,7 +769,7 @@ This represents a cloud environment with:
 50 virtual machines
 
 with each VM requesting the configured CPU capacity.
-
+```text
 📊 Example Simulation Workflow
 1. Start application
         ↓
@@ -803,6 +805,7 @@ with each VM requesting the configured CPU capacity.
         ↓
 17. Generate summary
 📁 Generated Reports and Metrics
+```
 
 The monitoring subsystem can generate CSV-based outputs including:
 
@@ -828,8 +831,9 @@ VM count
 Host status
 
 Example:
-
+```text
 Host ID | CPU % | RAM % | Power | Energy | VM Count | Status
+```
 🖥️ VM Metrics
 
 VM-level information includes information about:
@@ -859,7 +863,7 @@ VM association
 Energy is monitored throughout the simulation.
 
 The framework can analyse:
-
+```text
 Host Utilization
        ↓
 Power
@@ -867,6 +871,7 @@ Power
 Energy
        ↓
 Cumulative Energy
+```
 
 The Energy vs Time graph provides a visual representation of this behaviour.
 
@@ -892,7 +897,7 @@ only for energy consumption but also for service quality.
 The framework is designed to support an AI-aware optimization layer.
 
 A future intelligent placement engine can consider:
-
+```text
 CPU Utilization
        +
 RAM Utilization
@@ -908,6 +913,7 @@ SLA
 Host Suitability Score
        ↓
 VM Placement Decision
+```
 
 Potential future optimization capabilities include:
 
@@ -1053,7 +1059,7 @@ Optimization provides a simulation-based environment for studying virtualized
 cloud infrastructure.
 
 The framework combines:
-
+```text
 Cloud Simulation
       +
 VM Placement
@@ -1071,6 +1077,7 @@ Live Dashboard
 CSV Reporting
       +
 AI-Aware Optimization Foundation
+```
 
 The current implementation establishes a configurable and measurable baseline
 for cloud resource management. The collected resource, energy, workload,
