@@ -998,7 +998,7 @@ placement and resource-management strategies.
 📚 Key Concepts Demonstrated
 
 This project demonstrates practical concepts in:
-
+```text
 Cloud Computing
 Virtualization
 VM Placement
@@ -1016,9 +1016,9 @@ Data Export
 Dashboard Visualization
 Energy-Aware Computing
 AI-Aware Cloud Optimization
+```
 👨‍💻 Contributions
-Primary areas:
-
+```text
 Simulation architecture
 CloudSim Plus setup
 Java/Maven integration
@@ -1042,6 +1042,7 @@ Literature review
 Analysis
 Conclusion
 Supporting documentation
+```
 
 The project was completed collaboratively, with both members participating
 in integration decisions, verification and final demonstration.
