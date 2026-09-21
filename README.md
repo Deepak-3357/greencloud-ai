@@ -312,12 +312,13 @@ AI-aware optimization layer.
 VM migration refers to moving a VM from one physical host to another.
 
 Conceptually:
-
+```text
 Host A
    │
    │ VM Migration
    ▼
 Host B
+```
 
 Migration information is monitored by the framework and presented through
 the migration timeline and reporting components.
@@ -341,7 +342,7 @@ SLA monitoring is important because energy optimization should not be
 considered independently of service quality.
 
 The system therefore tracks:
-
+```text
 Energy
   +
 CPU
@@ -353,6 +354,7 @@ Workload
 SLA
   +
 Migration
+```
 
 This allows energy and performance to be analysed together.
 
@@ -724,7 +726,7 @@ After successful compilation, run the project's main simulation launcher
 from your IDE.
 
 In IntelliJ IDEA:
-
+```text
 Open Project
      ↓
 Open pom.xml
@@ -736,6 +738,7 @@ Open src/main/java
 Locate the main simulation/launcher class
      ↓
 Run the main() method
+```
 
 If the project provides a Maven exec configuration, it can also be run
 through Maven according to the configuration in pom.xml.
@@ -769,8 +772,9 @@ This represents a cloud environment with:
 50 virtual machines
 
 with each VM requesting the configured CPU capacity.
-```text
+
 📊 Example Simulation Workflow
+```text
 1. Start application
         ↓
 2. Enter simulation parameters
