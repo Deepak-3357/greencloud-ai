@@ -77,7 +77,7 @@ The main objectives of the project are:
 
 The basic workflow of the system is:
 
-```text
+
 User Configuration
         │
         ▼
